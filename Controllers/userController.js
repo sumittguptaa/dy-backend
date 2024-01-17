@@ -38,7 +38,7 @@ const userController = {
       await newUser.save();
       sendVerificationEmail(newUser.email, otp);
 
-      res.json({ message: 'User registered successfully. Please check your email for verification.' });
+      res.json({ message: 'User registered successfully. Please check your email for verification.' ,newUser});
     } catch (error) {
       console.error(error);
       res.status(500).json({ message: 'Internal server error' });
@@ -89,14 +89,104 @@ const userController = {
         return res.status(401).json({ message: 'Invalid email or password' });
       }
 
-      const token = jwt.sign({ userId: user._id }, 'ehuewheuwh', { expiresIn: '1h' });
 
-      res.json({ message: 'Sign-in successful', token });
+
+       // Check if the user is an admin
+       if (user.isAdmin) {
+        // Admin sign-in
+        const token = jwt.sign({ userId: user._id }, 'ehuewheuwh', { expiresIn: '1h' });
+        return res.json({ message: 'Admin sign-in successful', token,user });
+      } else {
+        // Regular user sign-in
+        const token = jwt.sign({ userId: user._id }, 'ehuewheuwh', { expiresIn: '1h' });
+        return res.json({ message: 'User sign-in successful', token ,user});
+      }
+
+
+
+
+      // const token = jwt.sign({ userId: user._id }, 'ehuewheuwh', { expiresIn: '1h' });
+      // res.json({ message: 'Sign-in successful', token });
     } catch (error) {
       console.error(error);
       res.status(500).json({ message: 'Internal server error' });
     }
   },
+
+
+
+
+
+
+  /////////////////////////////////// getAlllusers only Admin
+  getAllUsers: async (req, res) => {
+    try {
+      // Check if the requesting user is an admin
+      if (!req.user || !req.user.isAdmin) {
+        return res.status(403).json({ message: 'Permission denied. Not an admin.' });
+      }
+
+      // Fetch all users
+      const users = await User.find({}, '-password'); // Exclude the password field from the response
+
+      res.json(users);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Internal server error' });
+    }
+  },
+
+
+
+
+
+
+
+
+  /////////////////////////////////////////////////////////////////////////
+  updateUser: async (req, res) => {
+    const userIdToUpdate = req.params.userId; // Extract user ID from request params
+    const updatedUserData = req.body; // Extract updated user data from request body
+
+    try {
+      const updatedUser = await User.findByIdAndUpdate(userIdToUpdate, updatedUserData, { new: true });
+
+      if (!updatedUser) {
+        return res.status(404).json({ message: 'User not found' });
+      }
+
+      res.json({ message: 'User updated successfully without authorization', user: updatedUser });
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Internal server error' });
+    }
+  },
+
+
+
+  ////////////////////////////////////////////////////delete user
+
+  deleteUser: async (req, res) => {
+    const userIdToDelete = req.params.userId; // Extract user ID from request params
+
+    try {
+      const deletedUser = await User.findByIdAndDelete(userIdToDelete);
+
+      if (!deletedUser) {
+        return res.status(404).json({ message: 'User not found' });
+      }
+
+      res.json({ message: 'User deleted successfully' });
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Internal server error' });
+    }
+  },
+
+
+
+
+
 
 
 

@@ -9,6 +9,7 @@ const userSchema = new mongoose.Schema({
   city: String,
   verified: { type: Boolean, default: false },
   otp: String,
+  isAdmin: { type: Boolean, default: false },
   resetToken: String,
   resetTokenExpiry: Date,
 });
