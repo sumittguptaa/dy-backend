@@ -1,13 +1,13 @@
 const path = require("path");
 const fs = require("fs");
 // const image_logo = require("../dypuniversity.png");
-module.exports = (student_data) => {
+module.exports = (data) => {
   const today = new Date();
   const localLogoPath = path.resolve(__dirname, "dypuniversity.png");
   const imgData = fs.readFileSync("dypuniversity.png", { encoding: "base64" });
   const imgData1 = fs.readFileSync("dypusm.png", { encoding: "base64" });
   const universityAddress = "University Address, City, Country"; // Replace with the actual address
-  const data = {
+  const default_data = {
     surname: "Doe",
     students_name: "John",
     fathers_name: "John Doe Sr.",
@@ -53,7 +53,9 @@ module.exports = (student_data) => {
       },
     ],
   };
-
+  if (!data) {
+    data = default_data;
+  }
   return `
     <!doctype html>
     <html>
