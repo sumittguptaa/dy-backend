@@ -253,14 +253,14 @@ module.exports = (student_data) => {
     <div style="text-align:center;">
        <div class="university-address">Dnyanpushpa Niketan', Plot No, 10, Sector 4, C,B,D Belapur, Navi Mumbai 400 614</div>
                  <div>Tel.: +91 22 2758 9200 www.dypusm.org</div>
-                    <div style=" text-align: center; font-weight: 500; font-size: 20px;">MBA ADMISSION FORM (Two Year Full Time Program: 2024-2026)</div>
+                    <div style=" text-align: center; font-weight: 500; font-size: 20px;">BBA ADMISSION FORM (Four Year Full Time Program : 2024-2028)</div>
                     </div>
 
 <hr style="border: 1px solid #222; width: 85%;">
   <table class="declarations-table">
             <tr>
                
-                    <td><b>(2 Years full time MBA program core & Sectoral Programs)</b></td>
+                    <td><b>(4 Years full time BBA program )</b></td>
                  
                   <td>
        <b>Application No: ................................</b> 
@@ -277,84 +277,68 @@ module.exports = (student_data) => {
          <div style=" width: 40px;  margin-left: 80px;height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
       </td>
       <td>
-         <div style="font-size: 14px;"> 1.MBA in Core Program (Specialization Finance, HRM , Marketing. Entrepreneurship, Sports, Operations.)</div>
+         <div style="font-size: 14px;"> 1.BBA (Marketing) </div>
       </td>
      
-   <td>
-      
-   </td>
-   <td>
+      <td>
+         <div style=" width: 40px;  margin-left: 80px;height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
+      </td>
+      <td>
+         <div style="font-size: 14px;"> 2.BBA (Finance) </div>
+      </td>
      
-   </td>
     <td style=" padding: 10px;text-align: left;"  rowspan="6">
          <div class="box-photo">Student's Latest photo: (in formal only) </div>
       </td>
    </tr>
    <tr>
-      <td>
-         <div style=" width: 40px;margin-left: 80px;  height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
+       <td>
+         <div style=" width: 40px;  margin-left: 80px;height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
       </td>
       <td>
-         <div style="font-size: 14px;"> 2. MBA in Sports Business Management </div>
+         <div style="font-size: 14px;"> 3.BBA (International Business) </div>
+      </td>
+     
+      <td>
+         <div style=" width: 40px;  margin-left: 80px;height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
       </td>
       <td>
-         <div style=" width: 40px;  height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
+         <div style="font-size: 14px;"> 4.BBA (Banking and Insurance) </div>
+      </td>
+     
+   </tr>
+   <tr>
+  <td>
+         <div style=" width: 40px;  margin-left: 80px;height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
       </td>
       <td>
-         <div style="font-size: 14px;"> 3.MBA in Health & Hospital Management </div>
+         <div style="font-size: 14px;"> 5.BBA (Hospital Administration) </div>
       </td>
+     
+      <td>
+         <div style=" width: 40px;  margin-left: 80px;height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
+      </td>
+      <td>
+         <div style="font-size: 14px;"> 6.BBA (Business Analytics) </div>
+      </td>
+     
    </tr>
    <tr>
       <td>
          <div style=" width: 40px; margin-left: 80px; height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
       </td>
       <td>
-         <div style="font-size: 14px;"> 4.MBA in International Business Management </div>
+         <div style="font-size: 14px;"> 7.Integrated BBA + MBA Program (5 Years) </div>
       </td>
       <td>
-         <div style=" width: 40px;  height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
+         
       </td>
       <td>
-         <div style="font-size: 14px;"> 5. MBA in Biotechnology Management </div>
+         
       </td>
    </tr>
-   <tr>
-      <td>
-         <div style=" width: 40px; margin-left: 80px; height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
-      </td>
-      <td>
-         <div style="font-size: 14px;"> 6. MBA in Pharmaceutical Industry Management </div>
-      </td>
-      <td>
-         <div style=" width: 40px;  height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
-      </td>
-      <td>
-         <div style="font-size: 14px;"> 7.MBA Banking & Insurance Management </div>
-      </td>
-   </tr>
-   <tr>
-      <td>
-         <div style=" width: 40px;margin-left: 80px;  height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
-      </td>
-      <td>
-         <div style="font-size: 14px;"> 8.MBA in Logistics & Supply Chain Management </div>
-      </td>
-      <td>
-         <div style=" width: 40px;  height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
-      </td>
-      <td>
-         <div style="font-size: 14px;"> 9.MBA in Aviation Management </div>
-      </td>
-   </tr>
-      <tr>
-      <td>
-         <div style=" width: 40px;margin-left: 80px;  height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
-      </td>
-      <td>
-         <div style="font-size: 14px;"> 10.MBA in Business Analytics </div>
-      </td>
-      
-   </tr>
+  
+     
 </table>
          <div class="form-container">
            <div>Name of the student's (NAME IN CAPITAL LETTERS)</div>
@@ -957,7 +941,7 @@ that, in absence of any document the final admission will not be granted and or 
          </div>
 
           <div style="text-align:center;font-weight: bold;margin-top:10px;">DYPCET & GD / PI HALL TICKET</div>
-           <div style="text-align:center;font-weight: bold;margin-top:10px;">2 YEAR FULL TIME MBA</div>
+           <div style="text-align:center;font-weight: bold;margin-top:10px;">4 YEARS FULL TIME BBA</div>
             <div style="text-align:center;font-weight: bold;margin-top:10px;">Year 2024</div>
 
                         <table>
@@ -1040,7 +1024,7 @@ that, in absence of any document the final admission will not be granted and or 
          </div>
 
           <div style="text-align:center;font-weight: bold;margin-top:10px;">DYPCET & GD / PI HALL TICKET</div>
-           <div style="text-align:center;font-weight: bold;margin-top:10px;">2 YEAR FULL TIME MBA</div>
+           <div style="text-align:center;font-weight: bold;margin-top:10px;">4 YEARS FULL TIME BBA</div>
             <div style="text-align:center;font-weight: bold;margin-top:10px;">Year 2024</div>
 
                         <table>
