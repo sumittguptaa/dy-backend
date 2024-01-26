@@ -52,7 +52,6 @@ module.exports = (student_data) => {
         percentage: "89",
       },
     ],
-    experience: [],
   };
 
   return `
@@ -253,14 +252,14 @@ module.exports = (student_data) => {
     <div style="text-align:center;">
        <div class="university-address">Dnyanpushpa Niketan', Plot No, 10, Sector 4, C,B,D Belapur, Navi Mumbai 400 614</div>
                  <div>Tel.: +91 22 2758 9200 www.dypusm.org</div>
-                    <div style=" text-align: center; font-weight: 500; font-size: 20px;">MBA ADMISSION FORM (Two Year Full Time Program: 2024-2026)</div>
+                    <div style=" text-align: center; font-weight: 500; font-size: 20px;">BBA ADMISSION FORM (Second Year Full Time Program : 2024-2028)</div>
                     </div>
 
 <hr style="border: 1px solid #222; width: 85%;">
   <table class="declarations-table">
             <tr>
                
-                    <td><b>(2 Years full time MBA program core & Sectoral Programs)</b></td>
+                    <td><b>(2 Years full time BBA program )</b></td>
                  
                   <td>
        <b>Application No: ................................</b> 
@@ -277,84 +276,68 @@ module.exports = (student_data) => {
          <div style=" width: 40px;  margin-left: 80px;height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
       </td>
       <td>
-         <div style="font-size: 14px;"> 1.MBA in Core Program (Specialization Finance, HRM , Marketing. Entrepreneurship, Sports, Operations.)</div>
+         <div style="font-size: 14px;"> 1.BBA (Marketing) </div>
       </td>
      
-   <td>
-      
-   </td>
-   <td>
+      <td>
+         <div style=" width: 40px;  margin-left: 80px;height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
+      </td>
+      <td>
+         <div style="font-size: 14px;"> 2.BBA (Finance) </div>
+      </td>
      
-   </td>
     <td style=" padding: 10px;text-align: left;"  rowspan="6">
          <div class="box-photo">Student's Latest photo: (in formal only) </div>
       </td>
    </tr>
    <tr>
-      <td>
-         <div style=" width: 40px;margin-left: 80px;  height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
+       <td>
+         <div style=" width: 40px;  margin-left: 80px;height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
       </td>
       <td>
-         <div style="font-size: 14px;"> 2. MBA in Sports Business Management </div>
+         <div style="font-size: 14px;"> 3.BBA (International Business) </div>
+      </td>
+     
+      <td>
+         <div style=" width: 40px;  margin-left: 80px;height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
       </td>
       <td>
-         <div style=" width: 40px;  height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
+         <div style="font-size: 14px;"> 4.BBA (Banking and Insurance) </div>
+      </td>
+     
+   </tr>
+   <tr>
+  <td>
+         <div style=" width: 40px;  margin-left: 80px;height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
       </td>
       <td>
-         <div style="font-size: 14px;"> 3.MBA in Health & Hospital Management </div>
+         <div style="font-size: 14px;"> 5.BBA (Hospital Administration) </div>
       </td>
+     
+      <td>
+         <div style=" width: 40px;  margin-left: 80px;height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
+      </td>
+      <td>
+         <div style="font-size: 14px;"> 6.BBA (Business Analytics) </div>
+      </td>
+     
    </tr>
    <tr>
       <td>
          <div style=" width: 40px; margin-left: 80px; height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
       </td>
       <td>
-         <div style="font-size: 14px;"> 4.MBA in International Business Management </div>
+         <div style="font-size: 14px;"> 7.Integrated BBA + MBA Program (5 Years) </div>
       </td>
       <td>
-         <div style=" width: 40px;  height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
+         
       </td>
       <td>
-         <div style="font-size: 14px;"> 5. MBA in Biotechnology Management </div>
+         
       </td>
    </tr>
-   <tr>
-      <td>
-         <div style=" width: 40px; margin-left: 80px; height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
-      </td>
-      <td>
-         <div style="font-size: 14px;"> 6. MBA in Pharmaceutical Industry Management </div>
-      </td>
-      <td>
-         <div style=" width: 40px;  height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
-      </td>
-      <td>
-         <div style="font-size: 14px;"> 7.MBA Banking & Insurance Management </div>
-      </td>
-   </tr>
-   <tr>
-      <td>
-         <div style=" width: 40px;margin-left: 80px;  height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
-      </td>
-      <td>
-         <div style="font-size: 14px;"> 8.MBA in Logistics & Supply Chain Management </div>
-      </td>
-      <td>
-         <div style=" width: 40px;  height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
-      </td>
-      <td>
-         <div style="font-size: 14px;"> 9.MBA in Aviation Management </div>
-      </td>
-   </tr>
-      <tr>
-      <td>
-         <div style=" width: 40px;margin-left: 80px;  height: 20px;  border: 1px solid #000; margin: 0 auto;"></div>
-      </td>
-      <td>
-         <div style="font-size: 14px;"> 10.MBA in Business Analytics </div>
-      </td>
-      
-   </tr>
+  
+     
 </table>
          <div class="form-container">
            <div>Name of the student's (NAME IN CAPITAL LETTERS)</div>
@@ -486,21 +469,7 @@ module.exports = (student_data) => {
                 </td>
                 
             </tr>
- <tr>
-                <td>
-                    <div>  Name of the entrance exam undertaken : <div class="box-application">CAT</div><div class="box-application">DYPCET</div><div class="box-application">MHCET</div><div class="box-application">Other</div> </div>
-                   
-                </td>
-                
-            </tr>
-            <tr>
-                <td>
-                    <div>  Year of taking of the above exam : ..............................................................Score obtained at above entrance examination......................................</div>
-                   
-                </td>
-                
-            </tr>
-              <tr>
+                  <tr>
                 <td>
                     <div>  Whether represented in sports at State/National level (Please attach certificate) : ...............YES <div class="box"></div> NO <div class="box"></div> </div>
                    
@@ -539,42 +508,7 @@ module.exports = (student_data) => {
                 </tbody>
             </table>
         </div>
-${
-  data.experience > 0
-    ? `
-    <div class="educational-qualification">
-        <div class="heading">Educational Qualification</div>
-        <table class="qualification-table">
-            <thead>
-                <tr>
-                    <th>Name and Address of the employer</th>
-                    <th>Position</th>
-                    <th>Period of employment</th>
-                    <th>Give the brief of job responsibilities</th>
-                    <th>Last Salary Drawn (Rs per month)</th>
-                 
-                </tr>
-            </thead>
-            <tbody>
-                ${data.experience
-                  .map(
-                    (qualification) => `
-                        <tr>
-                            <td>${qualification.name}</td>
-                            <td>${qualification.position}</td>
-                            <td>${qualification.period_of_employment}</td>
-                            <td>${qualification.job_responsibilities}</td>
-                            <td>${qualification.last_salary}</td>
-                        </tr>
-                    `
-                  )
-                  .join("")}
-            </tbody>
-        </table>
-    </div>
-`
-    : ""
-}
+
 
         <table class="declarations-table-new">
             <tr>
@@ -717,24 +651,9 @@ that, in absence of any document the final admission will not be granted and or 
                 </thead>
 
                  <tbody>
-                   <tr>
-                <td>
-                    <div> 1 Entrance Score Card (CAT or MHCET or CMAT) </div>
-                   
-                </td>
-                <td>
-                    <div class="box"></div>
-                </td>
-                <td>
-                     <div class="box"></div>
-                </td>
-                <td>
-                     <div class="box"></div>
-                </td>
-            </tr>
             <tr>
                 <td>
-                    <div> 2 SSC Mark Sheet & Passing Certificate. </div>
+                    <div> 1 SSC Mark Sheel & Passing Certificate. </div>
                    
                 </td>
                 <td>
@@ -750,7 +669,112 @@ that, in absence of any document the final admission will not be granted and or 
 
              <tr>
                 <td>
-                    <div> 3  HSC Mark Sheet & Passing Certificate </div>
+                    <div> 2  HSC Mark Sheet & Passing Certificate </div>
+                   
+                </td>
+                <td>       <div class="box"></div>
+                </td>
+                <td>
+                     <div class="box"></div>
+                </td>
+                <td>
+                     <div class="box"></div>
+                </td>
+            </tr>
+
+             <tr>
+                <td>
+                    <div> 3  HSC Transfer Certificate </div>
+                   
+                </td>
+                <td>       <div class="box"></div>
+                </td>
+                <td>
+                     <div class="box"></div>
+                </td>
+                <td>
+                     <div class="box"></div>
+                </td>
+            </tr>
+
+             <tr>
+                <td>
+                    <div> 4  HSC Migration Certificate </div>
+                   
+                </td>
+                <td>       <div class="box"></div>
+                </td>
+                <td>
+                     <div class="box"></div>
+                </td>
+                <td>
+                     <div class="box"></div>
+                </td>
+            </tr>
+
+             <tr>
+                <td>
+                    <div> 5  Caste Certificate & Caste Validity Certificate </div>
+                   
+                </td>
+                <td>       <div class="box"></div>
+                </td>
+                <td>
+                     <div class="box"></div>
+                </td>
+                <td>
+                     <div class="box"></div>
+                </td>
+            </tr>
+
+             <tr>
+                <td>
+                    <div> 6  PAN Card </div>
+                   
+                </td>
+                <td>       <div class="box"></div>
+                </td>
+                <td>
+                     <div class="box"></div>
+                </td>
+                <td>
+                     <div class="box"></div>
+                </td>
+            </tr>
+
+             <tr>
+                <td>
+                    <div> 7  Birth Certificate / Leaving Certificate </div>
+                   
+                </td>
+                <td>       <div class="box"></div>
+                </td>
+                <td>
+                     <div class="box"></div>
+                </td>
+                <td>
+                     <div class="box"></div>
+                </td>
+            </tr>
+
+             <tr>
+                <td>
+                    <div> 8  Aadhar Card </div>
+                   
+                </td>
+                <td>       <div class="box"></div>
+                </td>
+                <td>
+                     <div class="box"></div>
+                </td>
+                <td>
+                     <div class="box"></div>
+                </td>
+            </tr>
+
+             <tr>
+                <td>
+                    <div> 9  Domicile Certificate (for out side of maharashtra) </div>
                    
                 </td>
                 <td>       <div class="box"></div>
@@ -765,97 +789,7 @@ that, in absence of any document the final admission will not be granted and or 
 
             <tr>
                 <td>
-                    <div> 4 FY/SY/Graduation Result with passing & Degree Certificate </div>
-                   
-                </td>
-                <td>       <div class="box"></div>
-                </td>
-                <td>
-                     <div class="box"></div>
-                </td>
-                <td>
-                     <div class="box"></div>
-                </td>
-            </tr>
-          
-             <tr>
-                <td>
-                    <div> 5 Transfer Certificate from the institute last attended.(Original)</div>
-                   
-                </td>
-                <td>       <div class="box"></div>
-                </td>
-                <td>
-                     <div class="box"></div>
-                </td>
-                <td>
-                     <div class="box"></div>
-                </td>
-            </tr>
-
-             <tr>
-                <td>
-                    <div> 6 Graduation Migration Certificate (Original)</div>
-                   
-                </td>
-                <td>       <div class="box"></div>
-                </td>
-                <td>
-                     <div class="box"></div>
-                </td>
-                <td>
-                     <div class="box"></div>
-                </td>
-            </tr>
-
-             <tr>
-                <td>
-                    <div> 7 Birth Certificate/Leaving Certificate</div>
-                   
-                </td>
-                <td>       <div class="box"></div>
-                </td>
-                <td>
-                     <div class="box"></div>
-                </td>
-                <td>
-                     <div class="box"></div>
-                </td>
-            </tr>
-
-             <tr>
-                <td>
-                    <div> 8 Aadhar Card</div>
-                   
-                </td>
-                <td>       <div class="box"></div>
-                </td>
-                <td>
-                     <div class="box"></div>
-                </td>
-                <td>
-                     <div class="box"></div>
-                </td>
-            </tr>
-
-             <tr>
-                <td>
-                    <div> 9 Domicile Certificate (for out side of Maharashtra)</div>
-                   
-                </td>
-                <td>       <div class="box"></div>
-                </td>
-                <td>
-                     <div class="box"></div>
-                </td>
-                <td>
-                     <div class="box"></div>
-                </td>
-            </tr>
-
-             <tr>
-                <td>
-                    <div> 10 Caste Certificate & Caste Validity Certificate</div>
+                    <div> 10 Valid Passport & Visa (for foreign National) </div>
                    
                 </td>
                 <td>       <div class="box"></div>
@@ -870,38 +804,7 @@ that, in absence of any document the final admission will not be granted and or 
 
             <tr>
                 <td>
-                    <div> 11 Valid Passport & Visa (for foreign National) </div>
-                   
-                </td>
-                <td>       <div class="box"></div>
-                </td>
-                <td>
-                     <div class="box"></div>
-                </td>
-                <td>
-                     <div class="box"></div>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <div> 12 Income/ Salary Certificate of parent </div>
-                   
-                </td>
-                <td>       <div class="box"></div>
-                </td>
-                <td>
-                     <div class="box"></div>
-                </td>
-                <td>
-                     <div class="box"></div>
-                </td>
-            </tr>
-
-            
-            <tr>
-                <td>
-                    <div> 13 PAN Card </div>
+                    <div> 11 Income/ Salary Certificate of parent </div>
                    
                 </td>
                 <td>       <div class="box"></div>
@@ -1009,7 +912,7 @@ that, in absence of any document the final admission will not be granted and or 
          </div>
 
           <div style="text-align:center;font-weight: bold;margin-top:10px;">DYPCET & GD / PI HALL TICKET</div>
-           <div style="text-align:center;font-weight: bold;margin-top:10px;">2 YEAR FULL TIME MBA</div>
+           <div style="text-align:center;font-weight: bold;margin-top:10px;">2 YEARS FULL TIME BBA</div>
             <div style="text-align:center;font-weight: bold;margin-top:10px;">Year 2024</div>
 
                         <table>
@@ -1092,7 +995,7 @@ that, in absence of any document the final admission will not be granted and or 
          </div>
 
           <div style="text-align:center;font-weight: bold;margin-top:10px;">DYPCET & GD / PI HALL TICKET</div>
-           <div style="text-align:center;font-weight: bold;margin-top:10px;">2 YEAR FULL TIME MBA</div>
+           <div style="text-align:center;font-weight: bold;margin-top:10px;">2 YEARS FULL TIME BBA</div>
             <div style="text-align:center;font-weight: bold;margin-top:10px;">Year 2024</div>
 
                         <table>

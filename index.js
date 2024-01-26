@@ -9,6 +9,15 @@ const cors = require("cors");
 const pdf = require("html-pdf");
 
 const pdfTemplate = require("./document/index.js");
+const mbatemplate = require("./document/MBA.js");
+const bba_2nd_template = require("./document/BBA2ndyear.js");
+const bba_3rd_template = require("./document/BBA3ndyear.js");
+const templates = {
+  mba: mbatemplate,
+  bba_2nd: bba_2nd_template,
+  bba_3rd: bba_3rd_template,
+};
+
 const app = express();
 const port = 3000;
 app.use(cors());
@@ -32,13 +41,20 @@ app.use("/user-course", courseRoutes);
 app.use("/payment", paymentRoutes);
 
 app.post("/create-pdf", (req, res) => {
-  pdf.create(pdfTemplate(req.body), {}).toFile("result.pdf", (err) => {
-    if (err) {
-      res.send(Promise.reject());
-    }
+  const course = req.body.course;
+  const template = templates[course];
 
-    res.send(Promise.resolve());
-  });
+  if (template) {
+    pdf.create(template(req.body), {}).toFile("result.pdf", (err) => {
+      if (err) {
+        res.send(Promise.reject());
+      } else {
+        res.send(Promise.resolve());
+      }
+    });
+  } else {
+    res.status(400).send("Invalid course");
+  }
 });
 
 app.get("/fetch-pdf", (req, res) => {
