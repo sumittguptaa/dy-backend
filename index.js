@@ -11,7 +11,7 @@ const pdf = require("html-pdf");
 const pdfTemplate = require("./document/index.js");
 const mbatemplate = require("./document/MBA.js");
 const bba_2nd_template = require("./document/BBA2ndyear.js");
-const bba_3rd_template = require("./document/BBA3ndyear.js");
+const bba_3rd_template = require("./document/BBA3rdyear.js");
 const templates = {
   mba: mbatemplate,
   bba_2nd: bba_2nd_template,
