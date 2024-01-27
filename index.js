@@ -32,7 +32,7 @@ const db = mongoose.connection;
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 app.use(bodyParser.json());
 
-app.use(cors());
+app.use(cors({ origin: 'http://localhost:3001', credentials: true }));
 
 
 
