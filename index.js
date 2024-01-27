@@ -20,7 +20,7 @@ const templates = {
 
 const app = express();
 const port = 3000;
-app.use(cors());
+app.use(cors({ origin: 'http://localhost:3001', credentials: true }));
 app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
 mongoose.connect(
@@ -32,7 +32,7 @@ const db = mongoose.connection;
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 app.use(bodyParser.json());
 
-app.use(cors({ origin: 'http://localhost:3001', credentials: true }));
+
 
 
 
