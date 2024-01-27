@@ -8,7 +8,7 @@ module.exports = (student_data) => {
   const imgData1 = fs.readFileSync("dypusm.png", { encoding: "base64" });
   const universityAddress = "University Address, City, Country"; // Replace with the actual address
   const data = {
-    surname: "Doe",
+    surname: student_data.surname,
     students_name: "John",
     fathers_name: "John Doe Sr.",
     mothers_name: "Jane Doe",

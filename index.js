@@ -32,7 +32,17 @@ const db = mongoose.connection;
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 app.use(bodyParser.json());
 
-app.use(cors());
+// app.use(cors());
+
+const corsOptions = {
+  origin: 'http://localhost:3001/', // Replace with your React app's domain
+  credentials: true, // If your requests include credentials like cookies or HTTP authentication
+};
+
+app.use(cors(corsOptions));
+
+
+
 
 // Use user routes
 app.use("/user", userRoutes);
