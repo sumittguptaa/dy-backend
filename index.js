@@ -32,23 +32,14 @@ const db = mongoose.connection;
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 app.use(bodyParser.json());
 
-
-
-
-
 // Use user routes
 app.use("/user", userRoutes);
 app.use("/verify", verifyRoutes);
 app.use("/user-course", courseRoutes);
 app.use("/payment", paymentRoutes);
 
-
 app.options("/create-pdf", cors());
-app.post("/create-pdf",  cors(),(req, res) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Methods", "*");
-
-
+app.post("/create-pdf", cors(), (req, res) => {
   const course = req.body.course;
   const template = templates[course];
 
@@ -65,11 +56,8 @@ app.post("/create-pdf",  cors(),(req, res) => {
   }
 });
 
-app.options("/fetch-pdf", cors());
-app.get("/fetch-pdf",cors(), (req, res) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Methods", "*");
-  
+// app.options("/fetch-pdf", cors());
+app.get("/fetch-pdf", cors(), (req, res) => {
   res.sendFile(`${__dirname}/result.pdf`);
 });
 app.listen(port, () => {
