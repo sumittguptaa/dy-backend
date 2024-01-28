@@ -20,15 +20,7 @@ const templates = {
 
 const app = express();
 const port = 3000;
-
-const corsOpts = {
-  origin: "*",
-
-  methods: ["GET", "POST"],
-};
-
-app.use(cors(corsOpts));
-// app.use(cors({ origin: "https://admission.dypusm.org" }));
+app.use(cors());
 app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
 mongoose.connect(
@@ -65,29 +57,10 @@ app.post("/create-pdf", cors(), (req, res) => {
 });
 
 // app.options("/fetch-pdf", cors());
-// app.get("/fetch-pdf", cors(), (req, res) => {
-//   res.sendFile(`${__dirname}/result.pdf`);
-// });
-
 app.get("/fetch-pdf", cors(), (req, res) => {
-  try {
-    // Assuming that the PDF file exists at the specified path
-    const filePath = `${__dirname}/result.pdf`;
-
-    // Sending the PDF file as a response
-    res.sendFile(filePath, (error) => {
-      if (error) {
-        // Handle the error if there is any issue sending the file
-        console.error("Error sending PDF file:", error);
-        res.status(500).send("Internal Server Error");
-      }
-    });
-  } catch (error) {
-    // Handle any other unexpected errors
-    console.error("Unexpected error:", error);
-    res.status(500).send("Internal Server Error");
-  }
+  res.sendFile(`${__dirname}/result.pdf`);
 });
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
