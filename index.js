@@ -46,20 +46,32 @@ app.use("/user-course", courseRoutes);
 app.use("/payment", paymentRoutes);
 
 app.options("/create-pdf", cors());
+// app.post("/create-pdf", cors(), (req, res) => {
+//   const course = req.body.course;
+//   const template = templates[course];
+
+//   pdf.create(template(req.body), {}).toFile("result.pdf", (err) => {
+//     if (err) {
+//       console.log(err);
+//       return res.status(500).json({ error: "Error creating PDF" });
+//     }
+
+//     return res.sendFile(`${__dirname}/result.pdf`);
+//   });
+// });
+
 app.post("/create-pdf", cors(), (req, res) => {
   const course = req.body.course;
   const template = templates[course];
 
   pdf.create(template(req.body), {}).toFile("result.pdf", (err) => {
     if (err) {
-      console.log(err);
-      return res.status(500).json({ error: "Error creating PDF" });
+      res.send(Promise.reject());
     }
 
-    return res.sendFile(`${__dirname}/result.pdf`);
+    res.send(Promise.resolve());
   });
 });
-
 app.options("/fetch-pdf", cors());
 app.get("/fetch-pdf", cors(), (req, res) => {
   res.sendFile(`${__dirname}/result.pdf`);
