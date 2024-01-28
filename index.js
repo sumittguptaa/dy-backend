@@ -52,6 +52,7 @@ app.post("/create-pdf", cors(), (req, res) => {
 
   pdf.create(template(req.body), {}).toFile("result.pdf", (err) => {
     if (err) {
+      console.log(err);
       return res.status(500).json({ error: "Error creating PDF" });
     }
 
