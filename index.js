@@ -42,7 +42,13 @@ app.use("/verify", verifyRoutes);
 app.use("/user-course", courseRoutes);
 app.use("/payment", paymentRoutes);
 
+
+app.options("/create-pdf", cors());
 app.post("/create-pdf",  cors(),(req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "*");
+
+
   const course = req.body.course;
   const template = templates[course];
 
@@ -59,7 +65,11 @@ app.post("/create-pdf",  cors(),(req, res) => {
   }
 });
 
+app.options("/fetch-pdf", cors());
 app.get("/fetch-pdf",cors(), (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "*");
+  
   res.sendFile(`${__dirname}/result.pdf`);
 });
 app.listen(port, () => {
