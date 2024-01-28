@@ -50,17 +50,13 @@ app.post("/create-pdf", cors(), (req, res) => {
   const course = req.body.course;
   const template = templates[course];
 
-  if (template) {
-    pdf.create(template(req.body), {}).toFile("result.pdf", (err) => {
-      if (err) {
-        res.send(Promise.reject());
-      } else {
-        res.send(Promise.resolve());
-      }
-    });
-  } else {
-    res.status(400).send("Invalid course");
-  }
+  pdf.create(template(req.body), {}).toFile("result.pdf", (err) => {
+    if (err) {
+      return res.status(500).json({ error: "Error creating PDF" });
+    }
+
+    return res.sendFile(`${__dirname}/result.pdf`);
+  });
 });
 
 app.options("/fetch-pdf", cors());
