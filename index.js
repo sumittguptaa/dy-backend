@@ -20,8 +20,15 @@ const templates = {
 
 const app = express();
 const port = 3000;
-app.use(cors());
-app.use(cors({ origin: "https://admission.dypusm.org" }));
+
+const corsOpts = {
+  origin: "*",
+
+  methods: ["GET", "POST"],
+};
+
+app.use(cors(corsOpts));
+// app.use(cors({ origin: "https://admission.dypusm.org" }));
 app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
 mongoose.connect(
