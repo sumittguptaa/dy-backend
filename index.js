@@ -56,11 +56,10 @@ app.post("/create-pdf", cors(), (req, res) => {
   }
 });
 
-// app.options("/fetch-pdf", cors());
+app.options("/fetch-pdf", cors());
 app.get("/fetch-pdf", cors(), (req, res) => {
   res.sendFile(`${__dirname}/result.pdf`);
 });
-
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
