@@ -20,7 +20,7 @@ const templates = {
 
 const app = express();
 const port = 3000;
-app.use(cors({ origin: 'http://localhost:3001', credentials: true }));
+app.use(cors());
 app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
 mongoose.connect(
@@ -42,7 +42,7 @@ app.use("/verify", verifyRoutes);
 app.use("/user-course", courseRoutes);
 app.use("/payment", paymentRoutes);
 
-app.post("/create-pdf", (req, res) => {
+app.post("/create-pdf",  cors(),(req, res) => {
   const course = req.body.course;
   const template = templates[course];
 
@@ -59,7 +59,7 @@ app.post("/create-pdf", (req, res) => {
   }
 });
 
-app.get("/fetch-pdf", (req, res) => {
+app.get("/fetch-pdf",cors(), (req, res) => {
   res.sendFile(`${__dirname}/result.pdf`);
 });
 app.listen(port, () => {
